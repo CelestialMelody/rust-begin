@@ -49,7 +49,3 @@ fn sum(x: i32, y: i32) -> i32 {
     // return x + y;
     x + y
 }
-let v = {
-    let x = 3;
-};
-assert!(v == ());
