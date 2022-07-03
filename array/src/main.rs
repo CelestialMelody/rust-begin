@@ -59,6 +59,6 @@ fn main() {
         let name0 = names.get(0).unwrap();
 
         // 但是下标索引就存在越界的风险了
-        let _name1 = &names[2];
+        let _name1 = &names[1];
     }
 }
