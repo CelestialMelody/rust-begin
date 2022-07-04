@@ -101,6 +101,22 @@ fn main() {
     }
 
     {
+        let x = String::from("hello");
+        let ref y = x;
+        let ref z = &x;
+        let yy = &x;
+        let zz = &z;
+
+        println!("{}, {}, {} , {}, {}", x, y, z, yy, zz); // 都是hello
+
+        // test_type(x); // x已经借用；test_type参数非不可变引用
+        test_type(y);
+        test_type(z);
+        test_type(yy);
+        test_type(zz);
+    }
+
+    {
         // 仅填空并修复错误
         enum Message {
             Quit,
